@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "C:\Users\petete\PycharmProjects\pythonProject4_chatUI\Purp-Chat_App_UI\main.py", line 6, in <module>
+    PurpApp().run()
+  File "C:\Users\petete\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\kivy\app.py", line 956, in run
+    runTouchApp()
+  File "C:\Users\petete\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\kivy\base.py", line 574, in runTouchApp
+    EventLoop.mainloop()
+  File "C:\Users\petete\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\kivy\base.py", line 339, in mainloop
+    self.idle()
+  File "C:\Users\petete\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\kivy\base.py", line 383, in idle
+    self.dispatch_input()
+  File "C:\Users\petete\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\kivy\base.py", line 334, in dispatch_input
+    post_dispatch_input(*pop(0))
+  File "C:\Users\petete\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\kivy\base.py", line 302, in post_dispatch_input
+    wid.dispatch('on_touch_up', me)
+  File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+  File "C:\Users\petete\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+    self.dispatch('on_release')
+  File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+  File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+  File "kivy\_event.pyx", line 1191, in kivy._event.EventObservers._dispatch
+  File "C:\Users\petete\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+    exec(__kvlang__.co_value, idmap)
+  File "C:\Users\petete\PycharmProjects\pythonProject4_chatUI\Purp-Chat_App_UI\libs\uix\kv\chat_screen.kv", line 55, in <module>
+    on_release: root.receive(field.text.strip())
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\petete\PycharmProjects\pythonProject4_chatUI\Purp-Chat_App_UI\libs\uix\baseclass\chat_screen.py", line 55, in receive
+    texto = respuesta['replies'][0]['text']
+            ~~~~~~~~~^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
