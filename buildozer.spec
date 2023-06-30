@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.8.5,hostpython3,kivy==2.0.0,sdl2_ttf==2.0.15,pillow, docutils, android,os-sys
+requirements = python3,hostpython3,kivy,sdl2_ttf,pillow, docutils, android,os-sys
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
